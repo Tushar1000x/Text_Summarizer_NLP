@@ -1,0 +1,15 @@
+LICENCE
+README.md
+setup.py
+src/Text_Summarizer_NLP.egg-info/PKG-INFO
+src/Text_Summarizer_NLP.egg-info/SOURCES.txt
+src/Text_Summarizer_NLP.egg-info/dependency_links.txt
+src/Text_Summarizer_NLP.egg-info/top_level.txt
+src/Text_summarizer_NLP/__init__.py
+src/Text_summarizer_NLP/components/__init__.py
+src/Text_summarizer_NLP/config/__init__.py
+src/Text_summarizer_NLP/config/configuration.py
+src/Text_summarizer_NLP/constants/__init__.py
+src/Text_summarizer_NLP/entity/__init__.py
+src/Text_summarizer_NLP/logging/__init__.py
+src/Text_summarizer_NLP/pipeline/__init__.py
