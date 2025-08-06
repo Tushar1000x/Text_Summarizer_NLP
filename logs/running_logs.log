@@ -64,3 +64,20 @@ Source-Age: 0
 [2025-08-06 16:55:18,688: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2025-08-06 18:11:51,025: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-08-06 18:11:51,026: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:11:51,027: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:11:51,027: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:11:51,027: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_ingestion]
+[2025-08-06 18:11:51,027: INFO: TextSummarizerLogger: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-08-06 18:11:51,122: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:11:51,122: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-08-06 18:11:51,123: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:11:51,124: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:11:51,124: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:11:51,124: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_validation]
+[2025-08-06 18:11:51,125: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]

@@ -1,10 +1,10 @@
 import os
 import urllib.request as request
 import zipfile
-from src.textsummerize.logging import logger
-from src.textsummerize.utils.common import get_size
+from src.textsummarize.logging import logger
+from src.textsummarize.utils.common import get_size
 from pathlib import Path
-from src.textsummerize.entity import DataIngestionConfig
+from src.textsummarize.entity import DataIngestionConfig
 
 
 class DataIngestion:

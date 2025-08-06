@@ -1,6 +1,6 @@
-from src.textsummerize.config.configuration import ConfigurationManager 
-from src.textsummerize.components.data_ingestion import DataIngestion
-from src.textsummerize.logging import logger
+from src.textsummarize.config.configuration import ConfigurationManager 
+from src.textsummarize.components.data_ingestion import DataIngestion
+from src.textsummarize.logging import logger
 
 
 class DataIngestionTrainingPipeline:
