@@ -1,0 +1,66 @@
+[2025-08-05 18:58:12,392: INFO: main: welcome to our custom log]
+[2025-08-05 19:03:52,406: INFO: TextSummarizerLogger: main: welcome to our custom log]
+[2025-08-06 16:53:22,567: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-08-06 16:53:22,569: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 16:53:22,569: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 16:53:22,569: ERROR: TextSummarizerLogger: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummerize/utils/common.py", line 30, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hp/anaconda3/envs/textS/lib/python3.11/site-packages/box/box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/main.py", line 11, in <module>
+    data_ingestion.main()
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummerize/pipeline/stage01_dataIngestion.py", line 11, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummerize/config/configuration.py", line 17, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hp/anaconda3/envs/textS/lib/python3.11/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummerize/utils/common.py", line 32, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-08-06 16:55:16,628: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-08-06 16:55:16,629: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 16:55:16,630: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 16:55:16,630: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 16:55:16,630: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_ingestion]
+[2025-08-06 16:55:18,563: INFO: TextSummarizerLogger: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: CE26:11655B:FA763:260D9B:68933B9D
+Accept-Ranges: bytes
+Date: Wed, 06 Aug 2025 11:25:18 GMT
+Via: 1.1 varnish
+X-Served-By: cache-del21727-DEL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1754479518.523581,VS0,VE698
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 008cf9cb38ff663101fa006b9f4420683b2921d8
+Expires: Wed, 06 Aug 2025 11:30:18 GMT
+Source-Age: 0
+
+]
+[2025-08-06 16:55:18,688: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
