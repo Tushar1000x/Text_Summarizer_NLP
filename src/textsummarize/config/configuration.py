@@ -1,6 +1,6 @@
-from src.textsummarize.constants import *
-from src.textsummarize.utils.common import read_yaml, create_directories
-from src.textsummarize.entity import (DataIngestionConfig,
+from textsummarize.constants import *
+from textsummarize.utils.common import read_yaml, create_directories
+from textsummarize.entity import (DataIngestionConfig,
                                    DataValidationConfig,
                                    DataTransformationConfig,
                                    ModelTrainerConfig,

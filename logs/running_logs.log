@@ -81,3 +81,354 @@ x==========x]
 [2025-08-06 18:11:51,125: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2025-08-06 18:24:15,115: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-08-06 18:24:15,116: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:24:15,117: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:24:15,117: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:24:15,117: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_ingestion]
+[2025-08-06 18:24:15,117: INFO: TextSummarizerLogger: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-08-06 18:24:15,213: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:24:15,213: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-08-06 18:24:15,214: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:24:15,215: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:24:15,215: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:24:15,215: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_validation]
+[2025-08-06 18:24:15,215: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:24:15,216: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage started <<<<<<]
+[2025-08-06 18:24:15,217: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:24:15,217: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:24:15,217: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:24:15,217: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_transformation]
+[2025-08-06 18:24:19,513: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:37:15,026: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-08-06 18:37:15,027: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:37:15,028: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:37:15,028: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:37:15,028: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_ingestion]
+[2025-08-06 18:37:15,028: INFO: TextSummarizerLogger: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-08-06 18:37:15,126: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:37:15,126: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-08-06 18:37:15,127: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:37:15,128: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:37:15,128: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:37:15,128: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_validation]
+[2025-08-06 18:37:15,128: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:37:15,128: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage started <<<<<<]
+[2025-08-06 18:37:15,129: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:37:15,130: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:37:15,130: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:37:15,130: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_transformation]
+[2025-08-06 18:37:16,517: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:37:16,517: INFO: TextSummarizerLogger: main: >>>>>> stage Data ModelTrainer stage started <<<<<<]
+[2025-08-06 18:37:16,518: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:37:16,519: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:37:16,519: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:37:16,519: INFO: TextSummarizerLogger: common: created directory at: artifacts/model_trainer]
+[2025-08-06 18:38:09,818: ERROR: TextSummarizerLogger: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/main.py", line 47, in <module>
+    data_modelTrainer.main()
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummarize/pipeline/stage04_modelTrainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummarize/components/model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2025-08-06 18:42:37,537: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-08-06 18:42:37,538: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:42:37,539: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:42:37,539: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:42:37,539: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_ingestion]
+[2025-08-06 18:42:37,539: INFO: TextSummarizerLogger: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-08-06 18:42:37,632: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:42:37,632: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-08-06 18:42:37,633: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:42:37,633: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:42:37,633: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:42:37,633: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_validation]
+[2025-08-06 18:42:37,634: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:42:37,634: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage started <<<<<<]
+[2025-08-06 18:42:37,635: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:42:37,635: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:42:37,636: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:42:37,636: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_transformation]
+[2025-08-06 18:42:38,921: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:42:38,921: INFO: TextSummarizerLogger: main: >>>>>> stage Data ModelTrainer stage started <<<<<<]
+[2025-08-06 18:42:38,922: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:42:38,923: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:42:38,923: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:42:38,923: INFO: TextSummarizerLogger: common: created directory at: artifacts/model_trainer]
+[2025-08-06 18:42:44,578: ERROR: TextSummarizerLogger: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/main.py", line 47, in <module>
+    data_modelTrainer.main()
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummarize/pipeline/stage04_modelTrainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummarize/components/model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2025-08-06 18:44:53,633: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-08-06 18:44:53,635: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:44:53,636: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:44:53,636: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:44:53,636: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_ingestion]
+[2025-08-06 18:44:53,636: INFO: TextSummarizerLogger: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-08-06 18:44:53,729: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:44:53,729: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-08-06 18:44:53,730: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:44:53,730: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:44:53,731: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:44:53,731: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_validation]
+[2025-08-06 18:44:53,731: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:44:53,731: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage started <<<<<<]
+[2025-08-06 18:44:53,732: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:44:53,733: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:44:53,733: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:44:53,733: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_transformation]
+[2025-08-06 18:44:55,656: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:44:55,657: INFO: TextSummarizerLogger: main: >>>>>> stage Data ModelTrainer stage started <<<<<<]
+[2025-08-06 18:44:55,658: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:44:55,659: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:44:55,659: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:44:55,659: INFO: TextSummarizerLogger: common: created directory at: artifacts/model_trainer]
+[2025-08-06 18:45:00,118: ERROR: TextSummarizerLogger: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.21.0`: Please run `pip install transformers[torch]` or `pip install accelerate -U`]
+Traceback (most recent call last):
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/main.py", line 47, in <module>
+    data_modelTrainer.main()
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummarize/pipeline/stage04_modelTrainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummarize/components/model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+  File "<string>", line 128, in __init__
+  File "/home/hp/anaconda3/envs/textS/lib/python3.11/site-packages/transformers/training_args.py", line 1641, in __post_init__
+    and (self.device.type == "cpu" and not is_torch_greater_or_equal_than_2_3)
+         ^^^^^^^^^^^
+  File "/home/hp/anaconda3/envs/textS/lib/python3.11/site-packages/transformers/training_args.py", line 2149, in device
+    return self._setup_devices
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/hp/anaconda3/envs/textS/lib/python3.11/site-packages/transformers/utils/generic.py", line 59, in __get__
+    cached = self.fget(obj)
+             ^^^^^^^^^^^^^^
+  File "/home/hp/anaconda3/envs/textS/lib/python3.11/site-packages/transformers/training_args.py", line 2055, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.21.0`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+[2025-08-06 18:46:32,657: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-08-06 18:46:32,658: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:46:32,659: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:46:32,659: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:46:32,659: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_ingestion]
+[2025-08-06 18:46:32,659: INFO: TextSummarizerLogger: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-08-06 18:46:32,757: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:46:32,757: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-08-06 18:46:32,758: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:46:32,758: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:46:32,758: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:46:32,758: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_validation]
+[2025-08-06 18:46:32,759: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:46:32,759: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage started <<<<<<]
+[2025-08-06 18:46:32,760: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:46:32,761: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:46:32,761: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:46:32,761: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_transformation]
+[2025-08-06 18:46:33,608: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:46:33,608: INFO: TextSummarizerLogger: main: >>>>>> stage Data ModelTrainer stage started <<<<<<]
+[2025-08-06 18:46:33,610: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-06 18:46:33,610: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:46:33,611: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-06 18:46:33,611: INFO: TextSummarizerLogger: common: created directory at: artifacts/model_trainer]
+[2025-08-06 19:15:24,242: INFO: TextSummarizerLogger: main: >>>>>> stage Data ModelTrainer stage completed <<<<<<
+
+x==========x]
+[2025-08-08 18:12:45,783: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-08-08 18:12:45,785: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-08 18:12:45,785: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-08 18:12:45,785: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-08 18:12:45,785: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_ingestion]
+[2025-08-08 18:12:45,785: INFO: TextSummarizerLogger: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-08-08 18:12:45,879: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-08-08 18:12:45,879: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-08-08 18:12:45,880: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-08 18:12:45,881: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-08 18:12:45,881: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-08 18:12:45,881: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_validation]
+[2025-08-08 18:12:45,882: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-08-08 18:12:45,882: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage started <<<<<<]
+[2025-08-08 18:12:45,883: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-08 18:12:45,883: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-08 18:12:45,883: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-08 18:12:45,883: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_transformation]
+[2025-08-08 18:12:46,769: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage completed <<<<<<
+
+x==========x]
+[2025-08-08 18:12:46,769: INFO: TextSummarizerLogger: main: >>>>>> stage Data ModelTrainer stage started <<<<<<]
+[2025-08-08 18:12:46,771: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-08 18:12:46,771: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-08 18:12:46,771: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-08 18:12:46,771: INFO: TextSummarizerLogger: common: created directory at: artifacts/model_trainer]
+[2025-08-08 18:41:38,670: INFO: TextSummarizerLogger: main: >>>>>> stage Data ModelTrainer stage completed <<<<<<
+
+x==========x]
+[2025-08-08 18:41:38,671: INFO: TextSummarizerLogger: main: >>>>>> stage Data ModelEval stage started <<<<<<]
+[2025-08-08 18:41:38,671: ERROR: TextSummarizerLogger: main: name 'MModelEvaluationTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/main.py", line 57, in <module>
+    data_modelEval =  MModelEvaluationTrainingPipeline()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'MModelEvaluationTrainingPipeline' is not defined
+[2025-08-08 18:42:23,054: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-08-08 18:42:23,055: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-08 18:42:23,056: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-08 18:42:23,056: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-08 18:42:23,056: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_ingestion]
+[2025-08-08 18:42:23,056: INFO: TextSummarizerLogger: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-08-08 18:42:23,149: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-08-08 18:42:23,149: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-08-08 18:42:23,150: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-08 18:42:23,151: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-08 18:42:23,151: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-08 18:42:23,151: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_validation]
+[2025-08-08 18:42:23,151: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-08-08 18:42:23,152: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage started <<<<<<]
+[2025-08-08 18:42:23,153: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-08 18:42:23,153: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-08 18:42:23,153: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-08 18:42:23,153: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_transformation]
+[2025-08-08 18:42:23,959: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage completed <<<<<<
+
+x==========x]
+[2025-08-08 18:42:23,959: INFO: TextSummarizerLogger: main: >>>>>> stage Data ModelTrainer stage started <<<<<<]
+[2025-08-08 18:42:23,960: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-08 18:42:23,961: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-08 18:42:23,961: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-08 18:42:23,961: INFO: TextSummarizerLogger: common: created directory at: artifacts/model_trainer]
+[2025-08-08 19:04:37,697: ERROR: TextSummarizerLogger: main: CUDA error: unknown error
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+]
+Traceback (most recent call last):
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/main.py", line 48, in <module>
+    data_modelTrainer.main()
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummarize/pipeline/stage04_modelTrainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummarize/components/model_trainer.py", line 47, in train
+    trainer.train()
+  File "/home/hp/anaconda3/envs/textS/lib/python3.11/site-packages/transformers/trainer.py", line 1885, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/hp/anaconda3/envs/textS/lib/python3.11/site-packages/transformers/trainer.py", line 2216, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hp/anaconda3/envs/textS/lib/python3.11/site-packages/transformers/trainer.py", line 3250, in training_step
+    self.accelerator.backward(loss)
+  File "/home/hp/anaconda3/envs/textS/lib/python3.11/site-packages/accelerate/accelerator.py", line 2578, in backward
+    loss.backward(**kwargs)
+  File "/home/hp/anaconda3/envs/textS/lib/python3.11/site-packages/torch/_tensor.py", line 648, in backward
+    torch.autograd.backward(
+  File "/home/hp/anaconda3/envs/textS/lib/python3.11/site-packages/torch/autograd/__init__.py", line 353, in backward
+    _engine_run_backward(
+  File "/home/hp/anaconda3/envs/textS/lib/python3.11/site-packages/torch/autograd/graph.py", line 824, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: unknown error
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+[2025-08-09 14:55:46,347: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-08-09 14:55:46,349: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-09 14:55:46,350: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-09 14:55:46,350: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-09 14:55:46,350: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_ingestion]
+[2025-08-09 14:55:46,350: INFO: TextSummarizerLogger: data_ingestion: File already exists of size: ~ 7718 KB]
+[2025-08-09 14:55:46,464: INFO: TextSummarizerLogger: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-08-09 14:55:46,464: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-08-09 14:55:46,466: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-09 14:55:46,466: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-09 14:55:46,466: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-09 14:55:46,466: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_validation]
+[2025-08-09 14:55:46,467: INFO: TextSummarizerLogger: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-08-09 14:55:46,467: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage started <<<<<<]
+[2025-08-09 14:55:46,468: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-09 14:55:46,469: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-09 14:55:46,469: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-09 14:55:46,469: INFO: TextSummarizerLogger: common: created directory at: artifacts/data_transformation]
+[2025-08-09 14:55:47,416: INFO: TextSummarizerLogger: main: >>>>>> stage Data Transforamtion stage completed <<<<<<
+
+x==========x]
+[2025-08-09 14:55:47,416: INFO: TextSummarizerLogger: main: >>>>>> stage Data ModelTrainer stage started <<<<<<]
+[2025-08-09 14:55:47,418: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-09 14:55:47,418: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-09 14:55:47,418: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-09 14:55:47,418: INFO: TextSummarizerLogger: common: created directory at: artifacts/model_trainer]
+[2025-08-09 15:24:31,562: INFO: TextSummarizerLogger: main: >>>>>> stage Data ModelTrainer stage completed <<<<<<
+
+x==========x]
+[2025-08-09 15:24:31,562: INFO: TextSummarizerLogger: main: >>>>>> stage Data ModelEval stage started <<<<<<]
+[2025-08-09 15:24:31,564: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-09 15:24:31,565: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-09 15:24:31,565: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-09 15:24:31,565: INFO: TextSummarizerLogger: common: created directory at: artifacts/model_evaluation]
+[2025-08-09 15:24:41,365: INFO: absl: rouge_scorer: Using default tokenizer.]
+[2025-08-09 15:24:41,433: ERROR: TextSummarizerLogger: main: 'numpy.float64' object has no attribute 'mid']
+Traceback (most recent call last):
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/main.py", line 58, in <module>
+    data_modelEval.main()
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummarize/pipeline/stage05_modelEvaluation.py", line 15, in main
+    model_evaluation_config.evaluate()
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummarize/components/model_eval.py", line 77, in evaluate
+    rouge_dict = dict((rn, score[rn].mid.fmeasure ) for rn in rouge_names )
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hp/Downloads/NLP_Project/Text_Summarizer_NLP/src/textsummarize/components/model_eval.py", line 77, in <genexpr>
+    rouge_dict = dict((rn, score[rn].mid.fmeasure ) for rn in rouge_names )
+                           ^^^^^^^^^^^^^
+AttributeError: 'numpy.float64' object has no attribute 'mid'
+[2025-08-09 16:05:42,676: INFO: TextSummarizerLogger: common: yaml file: config/config.yaml loaded successfully]
+[2025-08-09 16:05:42,677: INFO: TextSummarizerLogger: common: yaml file: params.yaml loaded successfully]
+[2025-08-09 16:05:42,677: INFO: TextSummarizerLogger: common: created directory at: artifacts]
+[2025-08-09 16:05:42,677: INFO: TextSummarizerLogger: common: created directory at: artifacts/model_evaluation]
+[2025-08-09 16:06:02,731: INFO: absl: rouge_scorer: Using default tokenizer.]

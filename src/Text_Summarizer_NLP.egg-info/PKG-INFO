@@ -9,7 +9,21 @@ Project-URL: Bug Tracker, https://github.com/Tushar/Text-Summarizer-NLP/issues
 License-File: LICENCE
 Dynamic: author
 Dynamic: author-email
+Dynamic: description
 Dynamic: home-page
 Dynamic: license-file
 Dynamic: project-url
 Dynamic: summary
+
+## TEXT SUMMARIZAR NLP PROJECT
+
+## WORK FLOW
+
+1. update config.yaml
+2. update params.yaml
+3. update entity
+4. update configuration manager in src config
+5. update the components
+6. update the pipeline
+7. update the main.py
+8. update app.py00000
